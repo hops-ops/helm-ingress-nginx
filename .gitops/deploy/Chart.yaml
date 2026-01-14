@@ -1,0 +1,5 @@
+apiVersion: v2
+name: helm-ingress-nginx
+version: 0.0.0
+description: GitOps packaging for the ingress-nginx Crossplane configuration
+appVersion: 4.12.1

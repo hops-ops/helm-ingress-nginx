@@ -1,0 +1,19 @@
+apiVersion: helm.hops.ops.com.ai/v1alpha1
+kind: IngressNginx
+metadata:
+  name: ingress-nginx
+  namespace: example-env
+spec:
+  clusterName: example-cluster
+  labels:
+    team: platform
+  namespace: ingress-nginx
+  values:
+    controller:
+      replicaCount: 2
+      service:
+        type: LoadBalancer
+      metrics:
+        enabled: true
+        serviceMonitor:
+          enabled: true
