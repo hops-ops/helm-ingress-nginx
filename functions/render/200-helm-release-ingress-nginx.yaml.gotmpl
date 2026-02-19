@@ -32,8 +32,6 @@ spec:
       {{- toYaml $in.overrideAllValues | nindent 6 }}
     {{- else }}
     values:
-      fullnameOverride: ingress-nginx
-      nameOverride: ingress-nginx
       controller:
         metrics:
           enabled: true
